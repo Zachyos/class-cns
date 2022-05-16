@@ -1,26 +1,30 @@
 "# class-cns" 
+
+
 import os
 os.system('cls')
 
 from tkinter import *
+
 from colored import fg, bg, attr
- #this is a clear-host command, yes in python
 import runpy
 
 def menu_choice():
-    def print_menu():       # the menu itself
-        print('%s%s ------------  Menu  ------------ %s' % (fg(231), bg(92), attr(4)))
+
+  def print_menu():  
+  
+      print('%s%s ------------  Menu  ------------ %s' % (fg(231), bg(92), attr(4)))
         print('%s%s1. Covert minutes to seconds %s' % (fg(92), bg(231), attr(4)))
         print("%s%s2. Calander %s" % (fg(92), bg(231), attr(4)))
         print("%s%s3. How long have you been alive? %s" % (fg(92), bg(231), attr(4)))
         print("%s%s4. Convert Tempature%s" % (fg(92), bg(231), attr(4)))
-        print("%s%s5. Next Page  %s" % (fg(92), bg(231), attr(4)))
+      
+      print("%s%s5. Next Page  %s" % (fg(92), bg(231), attr(4)))
         print("%s%s6. Exit  %s" % (fg(92), bg(231), attr(0)))
         print("%s%s -------------------------------- %s" % (fg(231), bg(92), attr(1)))
-
     loop = True
     int_choice = -1
-
+    
     while loop:          # While loop which will keep going until loop = False
         print_menu()    # Displays menu
         choice = input("%s%sEnter your choice! [1-6]: %s" % (fg(11), bg(0), attr(1)))
@@ -74,11 +78,14 @@ import os
 os.system('cls')
 from tkinter import *
 from colored import fg, bg, attr
+
  #this is a clear-host command, yes in python
 import runpy
 
 def menu_choice():
+    
     def print_menu():       # the menu itself
+        
         print('%s%s ------------  Menu Pg2  ------------ %s' % (fg(231), bg(92), attr(4)))
         print('%s%s1. Create a Log File %s' % (fg(92), bg(231), attr(4)))
         print("%s%s2. Tik Tac Toe %s" % (fg(92), bg(231), attr(4)))
